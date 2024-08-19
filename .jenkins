@@ -2,18 +2,18 @@ pipeline {
     agent {
         node {
             label 'master'
-            customWorkspace 'D:\\GreenCodeRefiner'
+            customWorkspace 'D:\\GreenIT'
         }
     }
 
     
     environment {
 	    PROJECT_NAME = "Sample Application"
-		REPO_PATH = "D:\\GreenCodeRefiner"
+		REPO_PATH = "D:\\GreenIT"
 		PYTHON_PATH = "C:\\Users\\debas\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
 		PYTEST_PATH = "C:\\Users\\debas\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\Scripts\\pytest.exe"
 		PATH = "C:\\Users\\debas\\Downloads\\apache-maven-3.9.8-bin\\apache-maven-3.9.8\\bin\\;$PATH"
-		SHAREPOINT_PS_SCRIPT_PATH = 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\GreenTechNavigator@2\\upload_to_sharepoint.ps1'
+		SHAREPOINT_PS_SCRIPT_PATH = 'D:\\GreenIT@2\\upload_to_sharepoint.ps1'
     }
     
     stages {
