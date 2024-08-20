@@ -1,5 +1,5 @@
 # Load environment variables from .env file
-$envPath = "C:\ProgramData\Jenkins\.jenkins\workspace\GreenCodeScanPipeline\.env"
+$envPath = "C:\ProgramData\Jenkins\.jenkins\workspace\GreenTechNavigator@2\.env"
 if (Test-Path $envPath) {
     $env = Get-Content $envPath | ForEach-Object {
         if ($_ -match '^([^=]+)=(.*)$') {
