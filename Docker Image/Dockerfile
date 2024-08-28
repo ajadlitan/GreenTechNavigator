@@ -1,4 +1,3 @@
-
 # Use a base image with Python installed
 FROM python:3.9-slim
 
