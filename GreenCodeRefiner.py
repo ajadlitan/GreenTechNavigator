@@ -1,5 +1,3 @@
-
-
 import os
 import json
 import dotenv
@@ -143,6 +141,11 @@ while file_list:
     # Skip excluded files and the green_refined_folder and its subdirectories
     if file_name in excluded_files or relative_path.startswith(os.path.relpath(green_refined_directory, source_directory)):
         print(f"Skipping excluded file or directory: {relative_path}")
+        continue
+    
+    # Check if the file is empty
+    if os.path.getsize(file_path) == 0:
+        print(f"Skipping empty file: {file_path}")
         continue
     
     if relative_path in uploaded_files:
